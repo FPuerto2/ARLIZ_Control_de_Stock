@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A87B6970-338A-48F9-8B2F-FF512D69D657}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Presentacion.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>66394F6EF27F6BBF5ABCC92C47139E68B06FB2FB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Presentacion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEditarRepuestoPlantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarRepuestoPlantilla.Designer.cs">
+      <DependentUpon>frmEditarRepuestoPlantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarRepuestoaStockSecundario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarRepuestoaStockSecundario.Designer.cs">
+      <DependentUpon>frmAgregarRepuestoaStockSecundario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlertaCheckbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlertaCheckbox.Designer.cs">
+      <DependentUpon>frmAlertaCheckbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaModificacionStockPrimario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaModificacionStockPrimario.Designer.cs">
+      <DependentUpon>frmAltaModificacionStockPrimario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyuda.Designer.cs">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambiarNombreEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambiarNombreEquipo.Designer.cs">
+      <DependentUpon>frmCambiarNombreEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsumoElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsumoElemento.Designer.cs">
+      <DependentUpon>frmConsumoElemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsumoRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsumoRepuesto.Designer.cs">
+      <DependentUpon>frmConsumoRepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainWin.Designer.cs">
+      <DependentUpon>frmMainWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroAcciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroAcciones.Designer.cs">
+      <DependentUpon>frmRegistroAcciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReposicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReposicion.Designer.cs">
+      <DependentUpon>frmReposicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReposicionAutomatica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReposicionAutomatica.Designer.cs">
+      <DependentUpon>frmReposicionAutomatica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReposicionElegirEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReposicionElegirEquipo.Designer.cs">
+      <DependentUpon>frmReposicionElegirEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReposicionPlantillaStockSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReposicionPlantillaStockSec.Designer.cs">
+      <DependentUpon>frmReposicionPlantillaStockSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockPrimario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockPrimario.Designer.cs">
+      <DependentUpon>frmStockPrimario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockSecundario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockSecundario.Designer.cs">
+      <DependentUpon>frmStockSecundario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEditarRepuestoPlantilla.resx">
+      <DependentUpon>frmEditarRepuestoPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarRepuestoaStockSecundario.resx">
+      <DependentUpon>frmAgregarRepuestoaStockSecundario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlertaCheckbox.resx">
+      <DependentUpon>frmAlertaCheckbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaModificacionStockPrimario.resx">
+      <DependentUpon>frmAltaModificacionStockPrimario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyuda.resx">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambiarNombreEquipo.resx">
+      <DependentUpon>frmCambiarNombreEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsumoElemento.resx">
+      <DependentUpon>frmConsumoElemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsumoRepuesto.resx">
+      <DependentUpon>frmConsumoRepuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainWin.resx">
+      <DependentUpon>frmMainWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroAcciones.resx">
+      <DependentUpon>frmRegistroAcciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReposicion.resx">
+      <DependentUpon>frmReposicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReposicionAutomatica.resx">
+      <DependentUpon>frmReposicionAutomatica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReposicionElegirEquipo.resx">
+      <DependentUpon>frmReposicionElegirEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReposicionPlantillaStockSec.resx">
+      <DependentUpon>frmReposicionPlantillaStockSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockPrimario.resx">
+      <DependentUpon>frmStockPrimario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockSecundario.resx">
+      <DependentUpon>frmStockSecundario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Presentacion_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Negocio.CN_Articulos.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{eeede086-cf45-4416-919a-d8d0cb4e5071}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>
